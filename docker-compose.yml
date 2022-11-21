@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  demoR2dbcCallback:
+    container_name: demoR2dbcCallbackDb
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=demoR2dbcCallback
+      - POSTGRES_USER=belnarto
+      - POSTGRES_PASSWORD=passw0rd
